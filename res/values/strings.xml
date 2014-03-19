@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Becca\'s Tip Calculator</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="billTotal">Enter bill amount!</string>
+    <string name="tenPercent">10%</string>
+    <string name="fifteenPercent">15%</string>
+    <string name="twentyPercent">20%</string>
+    <string name="blank"></string>
+    <string name="tipAmount">Tip Amount:</string>
+    <string name="otherTip">Other Tip Percentage:</string>
+    <string name="otherTipAmount">Tip Amount</string>
+    <string name="tipCalc">Calculate!</string>
+    <string name="dolla">$</string>
+
+</resources>

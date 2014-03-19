@@ -1,0 +1,118 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".TipCalcActivity"
+    android:typeface="serif" >
+
+    <TextView
+        android:id="@+id/tipFinalAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/tipText"
+        android:layout_alignRight="@+id/btntwenty"
+        android:text="@string/blank"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <TextView
+        android:id="@+id/tipText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnten"
+        android:layout_alignParentBottom="true"
+        android:text="@string/tipAmount"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnDiff"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/diffTipAmount"
+        android:layout_alignParentRight="true"
+        android:text="@string/tipCalc"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/totalAmount"
+        style="@style/CustomText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:ems="10"
+        android:hint="@string/billTotal"
+        android:inputType="numberDecimal"
+        android:text="@string/blank" />
+
+    <Button
+        android:id="@+id/btnfifteen"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnten"
+        android:layout_alignRight="@+id/btnten"
+        android:layout_below="@+id/totalAmount"
+        android:layout_marginTop="49dp"
+        android:background="#E326ED"
+        android:text="@string/fifteenPercent"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btnten"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/totalAmount"
+        android:layout_alignRight="@+id/totalAmount"
+        android:layout_below="@+id/totalAmount"
+        android:background="#E326ED"
+        android:padding="10dp"
+        android:radius="10dp"
+        android:shape="rectangle"
+        android:text="@string/tenPercent"
+        android:textSize="24sp" />
+
+    <Button
+        android:id="@+id/btntwenty"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/btnfifteen"
+        android:layout_alignRight="@+id/btnfifteen"
+        android:layout_below="@+id/btnfifteen"
+        android:background="#E326ED"
+        android:text="@string/twentyPercent"
+        android:textSize="24sp" />
+
+    <EditText
+        android:id="@+id/diffTipAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/diffTip"
+        android:layout_marginTop="37dp"
+        android:layout_toLeftOf="@+id/btnDiff"
+        android:ems="10"
+        android:hint="@string/blank"
+        android:inputType="numberDecimal"
+        android:text="@string/blank" />
+
+    <TextView
+        android:id="@+id/diffTip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btntwenty"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="56dp"
+        android:text="@string/otherTip"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="24sp" />
+
+</RelativeLayout>
